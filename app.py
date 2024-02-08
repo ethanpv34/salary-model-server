@@ -5,7 +5,7 @@ from flask_cors import CORS, cross_origin
 from utils.constants import client_url
 
 app = Flask(__name__)
-CORS(app, origins=client_url)
+CORS(app, origins=[client_url])
 
 # Load in our model
 def load_model():
